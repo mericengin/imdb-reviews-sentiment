@@ -8,9 +8,9 @@ The goal of this project is to classify IMDB reviews as either **positive** or *
 
 ## Project Structure
 
-- **`main.py`**: The main script that runs the sentiment analysis process (To be Written As a Streamlit App).
+- **`main.py`**: The main script that runs the sentiment analysis process.
 - **`notebooks/`**: Folder containing Jupyter notebooks for exploration and analysis.
-- **`models/`**: Folder for saving trained machine learning models (to be added later).
+- **`models/`**: Folder for saving trained machine learning models.
 - **`data/`**: Contains raw and processed data for training and testing.
     - **`raw/`**: Raw data (IMDB reviews) before preprocessing.
     - **`processed/`**: Processed data after cleaning and feature extraction.
