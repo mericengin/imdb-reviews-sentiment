@@ -20,6 +20,6 @@ def preprocess_text(text):
     
     # Remove Stopwords
     stop_words = set(stopwords.words('english'))
-    filtered_tokens = [word for word in tokens if word.isalph() and word not in stop_words]
+    filtered_tokens = [word for word in tokens if word.isalpha() and word not in stop_words]
     
-    return filtered_tokens
+    return ' '.join(filtered_tokens)
