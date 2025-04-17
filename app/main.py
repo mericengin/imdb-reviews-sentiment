@@ -10,9 +10,9 @@ nltk.data.path.append(nltk_data_path)
 
 # Download NLTK data only if not already present
 try:
-    nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/punkt_tab')
 except LookupError:
-    nltk.download('punkt', download_dir=nltk_data_path)
+    nltk.download('punkt_tab', download_dir=nltk_data_path)
 
 try:
     nltk.data.find('corpora/stopwords')
