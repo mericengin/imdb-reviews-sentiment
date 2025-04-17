@@ -6,7 +6,6 @@ __pycache__/
 # Virtual environment folders
 venv/
 .env/
-.env/
 .venv/
 
 # Jupyter Notebook checkpoints
@@ -39,3 +38,6 @@ Thumbs.db
 # Sublime Text
 *.sublime-project
 *.sublime-workspace
+
+# NLTK data folder (Uncomment if you need to commit it)
+!nltk_data/
