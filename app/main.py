@@ -2,6 +2,9 @@ import streamlit as st
 import pickle
 import sys
 import os
+import nltk
+nltk.download('punkt')  # Download the tokenizer models
+nltk.download('stopwords')  # Download stopwords list
 
 # Add parent directory to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
