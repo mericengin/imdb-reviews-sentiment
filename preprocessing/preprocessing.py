@@ -2,6 +2,8 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+nltk.download('stopwords')
+nltk.download('punkt')
 
 def preprocess_text(text):
     """This function preprocesses text (removing html tags, removing stopwords, lowercasing and tokenizing the texts)"""
