@@ -3,8 +3,8 @@ import pickle
 import sys
 import os
 import nltk
-nltk.download('punkt')  # Download the tokenizer models
-nltk.download('stopwords')  # Download stopwords list
+nltk.download('punkt', download_dir='./nltk_data') 
+nltk.download('stopwords', download_dir='./nltk_data')
 
 # Add parent directory to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
