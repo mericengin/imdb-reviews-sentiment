@@ -3,8 +3,22 @@ import pickle
 import sys
 import os
 import nltk
-nltk.download('punkt', download_dir='./nltk_data') 
-nltk.download('stopwords', download_dir='./nltk_data')
+
+# Make sure nltk uses the custom download path
+nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
+nltk.data.path.append(nltk_data_path)
+
+# Download NLTK data only if not already present
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', download_dir=nltk_data_path)
+
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords', download_dir=nltk_data_path)
+    
 
 # Add parent directory to the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
