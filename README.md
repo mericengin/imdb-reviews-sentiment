@@ -2,20 +2,14 @@
 
 This project performs sentiment analysis on IMDB reviews using machine learning techniques such as **Logistic Regression** and **Multinomial Naive Bayes**. It classifies reviews as either **positive** or **negative** based on the content of the review using a trained TF-IDF vectorizer and is deployed as a web app using Streamlit.
 
----
-
 ## 🚀 Live Demo
 
 🔗 [Click here to try the app](https://imdb-reviews-sentiment-zsqdj8xeqfysdjptmrmopg.streamlit.app)
-
----
 
 ## 🧠 Models Used
 
 - Logistic Regression
 - Multinomial Naive Bayes
-
----
 
 ## 🧰 Tech Stack
 
@@ -26,8 +20,6 @@ This project performs sentiment analysis on IMDB reviews using machine learning 
 - Streamlit
 - Matplotlib & Seaborn (for visualizations)
 
----
-
 ## 📦 Features
 
 - Text Preprocessing (stopword removal, tokenization)
@@ -36,8 +28,6 @@ This project performs sentiment analysis on IMDB reviews using machine learning 
 - Confusion Matrix and Classification Report Visualization
 - Prediction Confidence Score
 - Sentiment Distribution Chart
-
----
 
 ## 📁 Project Structure
 
@@ -62,45 +52,3 @@ This project performs sentiment analysis on IMDB reviews using machine learning 
    ```bash
    git clone https://github.com/your-username/sentiment-analysis.git
    cd sentiment-analysis
-
-2. **Create and activate a virtual environment (recommended)**:
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-3. **Create and activate a virtual environment (recommended)**:
-   pip install -r requirements.txt
-
-## NLTK Resources
-
-Make sure the following NLTK resources are available. These are required for tokenization and stopword removal.
-
-You can download them programmatically:
-
-   import nltk
-   import os
-
-   nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
-   nltk.data.path.append(nltk_data_path)
-
-   try:
-    nltk.data.find('tokenizers/punkt')
-   except LookupError:
-    nltk.download('punkt', download_dir=nltk_data_path)
-
-   try:
-    nltk.data.find('corpora/stopwords')
-   except LookupError:
-    nltk.download('stopwords', download_dir=nltk_data_path)
-
-Or manually via Python console:
-
-   import nltk
-   nltk.download('punkt')
-   nltk.download('stopwords')
-
-## Run the App
-
-Make sure your models are placed in the models/ directory.
-
-Then launch the Streamlit app:
-   streamlit run app/main.py
